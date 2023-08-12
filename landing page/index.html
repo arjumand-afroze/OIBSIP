@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Landing page</title>
+<style type="text/css">
+		*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			height: 100vh;
+			background: url(4.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			position: relative;
+		}
+		nav{
+			width: 100%;
+			height: 70px;
+			padding: 0px 70px;
+			background: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 2px 0px 5px grey;
+		}
+		.logo{
+			font-weight: bold;
+			font-size: 2em;
+			letter-spacing: normal;
+		}
+		.menu a{
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			padding: 10px 20px;
+		}
+		.menu a:last-child{
+			background: brown;
+			color: white;
+			border-radius: 8px;
+		}
+
+		.h-text{
+			position: absolute;
+			top:20%;
+			left: 5%;
+			padding: 15px;
+
+		}
+		.h-text p{
+			color: #ffffff;
+			letter-spacing: 3px;
+			font-weight: bold;
+            font-size:50px;
+		}
+		.h-text h1{
+            color: white;
+			font-size: 4em;
+			line-height: 1.5em;
+		}
+		.h-text h1 span{
+				color: rgb(220, 10, 10);
+		}
+		.h-text h2{
+            color: #06b48e;
+			font-size: 4em;
+			margin-bottom: 0.5em;
+		}
+		#order{
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+			background: rgb(0, 0, 0);
+			border-radius: 8px;
+			padding: 10px 20px;
+		}
+		#dis{
+			text-decoration: none;
+			color: white;
+			background: #000000;
+			padding: 10px 20px;
+			border-radius: 8px;
+		}
+		#pics{
+			position: absolute;
+			bottom: 15%;
+			left: 5%;
+		}
+		#pics img{
+			transition: 0.4s ease;
+		}
+		#pics img:hover{
+			transform: translateY(-20px);
+		}
+</style>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">Shawarma House</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">Foods</a>
+			<a href="#">Offer's</a>
+			<a href="#">Your Order</a>
+			<a href="#">Delivery</a>
+			<a href="#">Cart</a>
+		</div>
+	</nav>
+	<div class="h-text">
+		<p>Free Home Delivery</p>
+		<h1>Quality F<span>oo</span>ds </h1>
+		<h2>Best Shawarma of the Week</h2>
+		<a href="#" id="order">Order now!!</a>
+		<a href="#" id="dis">25% Off Hurry!!</a>
+	</div>
+	<div id="pics">
+		<img src="2.jpg" width="100">	
+		<img src="bg.webp" width="100">
+		<img src="bg1.jpg" width="100">
+	</div>
+</header>
+</body>
+</html>
